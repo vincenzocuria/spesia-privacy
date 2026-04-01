@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy Apps - Vincenzo Curia</title>
+  <meta name="description" content="Pagina principale delle privacy policy delle app pubblicate da Vincenzo Curia." />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius: 20px;
+      --maxw: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      padding: 48px 24px 16px;
+    }
+
+    .hero-card,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.14);
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+
+    .content {
+      padding: 8px 24px 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    .app-name {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .desc {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      opacity: 0.95;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 0 24px 32px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 24px 16px 12px;
+      }
+
+      .content {
+        padding: 8px 16px 32px;
+      }
+
+      .hero-card,
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="badge">Privacy Policy Hub</div>
+        <h1>Informative Privacy delle app</h1>
+        <p class="subtitle">
+          In questa pagina sono raccolte le informative privacy delle applicazioni pubblicate da Vincenzo Curia.
+          Seleziona l’app di interesse per consultare la relativa informativa.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="container">
+      <div class="grid">
+        <section class="card">
+          <h2 class="app-name">SpesIA</h2>
+          <p class="desc">
+            Informativa privacy ufficiale dell’app SpesIA.
+          </p>
+          <a class="btn" href="spesia.html">Apri privacy</a>
+        </section>
+
+        <section class="card">
+          <h2 class="app-name">Spesia Calc</h2>
+          <p class="desc">
+            Informativa privacy ufficiale dell’app Spesia Calc.
+          </p>
+          <a class="btn" href="spesia-calc.html">Apri privacy</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Vincenzo Curia
+  </footer>
+</body>
+</html>
