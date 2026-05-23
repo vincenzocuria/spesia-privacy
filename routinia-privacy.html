@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativa Privacy — Routinia</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali dell'app mobile Routinia.">
+  <link rel="canonical" href="https://vincenzocuria.github.io/spesia-privacy/routinia-privacy.html">
+  <style>
+    :root {
+      --primary: #4A7C6E;
+      --primary-light: #6B9E8F;
+      --text: #2C2C2C;
+      --text-muted: #5A5A5A;
+      --bg: #F5F3EF;
+      --surface: #ffffff;
+      --border: #D9D4CC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 28px 24px 36px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      color: var(--primary);
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.12rem;
+      color: var(--primary);
+    }
+
+    p, li, td {
+      color: var(--text-muted);
+    }
+
+    p { margin: 0 0 12px; }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .meta strong { color: var(--text); }
+
+    .lead {
+      font-size: 1.02rem;
+      color: var(--text);
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 12px 14px;
+      border-left: 4px solid var(--primary-light);
+      background: #f0f5f3;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 0 0 12px;
+      padding-left: 22px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0f5f3;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+
+    a {
+      color: var(--primary);
+      word-break: break-word;
+    }
+
+    .contact {
+      margin-top: 8px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e6e3;
+        --text-muted: #b8b4ad;
+        --bg: #1e1e1e;
+        --surface: #2a2a2a;
+        --border: #444;
+      }
+
+      .notice { background: #2d3834; }
+      th { background: #2d3834; color: var(--text); }
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 22px 16px 28px; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr {
+        margin-bottom: 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid var(--border);
+      }
+      td:last-child { border-bottom: none; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="card">
+      <h1>Informativa Privacy — Routinia</h1>
+      <p class="meta">
+        <strong>Versione:</strong> 1.0<br>
+        <strong>Ultimo aggiornamento:</strong> 11 maggio 2026<br>
+        <strong>Titolare del trattamento / Sviluppatore:</strong> Routinia —
+        <a href="mailto:support@routinia.app">support@routinia.app</a>
+        (indirizzo postale fornito su richiesta scritta all'email di contatto)
+      </p>
+
+      <p class="lead">
+        La presente informativa descrive come l'applicazione mobile <strong>Routinia</strong>
+        («App») tratta i dati personali dell'utente. Routinia è progettata con approccio
+        <strong>local-first</strong>: molti dati restano sul dispositivo. Alcune funzioni possono
+        richiedere servizi cloud (Firebase) se attivate dall'utente e disponibili nella build
+        installata.
+      </p>
+
+      <div class="notice">
+        <strong>Routinia non fornisce servizi medici.</strong> Eventuali promemoria legati al
+        benessere sono <strong>strumenti organizzativi</strong> definiti dall'utente e non
+        sostituiscono il parere di un professionista sanitario.
+      </div>
+
+      <h2>1. Chi è il destinatario di questa informativa</h2>
+      <p>Utenti dell'App Routinia su sistemi operativi mobili compatibili.</p>
+
+      <h2>2. Dati trattati e basi (in sintesi)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Descrizione sintetica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Area">Dati locali</td>
+            <td data-label="Descrizione">
+              Attività, progressi, occorrenze, impostazioni dell'app e contenuti inseriti
+              dall'utente salvati sul dispositivo.
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Area">Account cloud (opzionale)</td>
+            <td data-label="Descrizione">
+              Se l'utente crea o accede a un account, possono essere trattati identificativi
+              di account e dati sincronizzati come descritto nelle sezioni seguenti.
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Area">Dati salute / passi</td>
+            <td data-label="Descrizione">
+              Solo se l'utente concede esplicitamente i permessi richiesti dalla piattaforma
+              e se la funzione è disponibile sul dispositivo.
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Area">Notifiche</td>
+            <td data-label="Descrizione">
+              Programmazione promemoria locale; contenuto determinato dalle routine create
+              dall'utente.
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Area">Condivisioni</td>
+            <td data-label="Descrizione">
+              Contenuti che l'utente sceglie di inviare a terzi (testo, file, immagini di
+              riepilogo, codici di import).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Dati salvati localmente sul dispositivo</h2>
+      <p>
+        Salvo diversa indicazione per funzioni cloud attive, le informazioni principali
+        dell'App (ad esempio attività create, titoli e descrizioni inseriti dall'utente,
+        progressi, dati di gioco locale come livelli/XP ove presenti, preferenze) sono
+        memorizzate <strong>in locale</strong>.
+      </p>
+      <p>Questi dati:</p>
+      <ul>
+        <li>
+          restano sul dispositivo finché non vengono eliminati dall'utente, con la
+          cancellazione dell'App o con il ripristino del dispositivo;
+        </li>
+        <li>
+          possono essere inclusi in <strong>export</strong> o <strong>backup locale</strong>
+          se l'utente usa funzioni di esportazione file previste dall'App.
+        </li>
+      </ul>
+
+      <h2>4. Account, Firebase Authentication e sincronizzazione</h2>
+      <p>Se nella build è abilitato l'accesso tramite <strong>Firebase Authentication</strong>:</p>
+      <ul>
+        <li>
+          l'utente può creare una sessione (ad esempio email/password o metodi offerti dalla
+          configurazione del progetto);
+        </li>
+        <li>
+          viene associato un <strong>identificativo utente</strong> gestito da Firebase per
+          autenticazione e, ove attivo, per sincronizzazione.
+        </li>
+      </ul>
+      <p>
+        La <strong>sincronizzazione cloud</strong> (se presente e attiva) può comportare il
+        trasferimento e l'aggiornamento su infrastruttura Google Firebase dei dati necessari ad
+        allineare attività e progressi tra dispositivi collegati allo stesso account. Il
+        perimetro esatto dipende dalla versione dell'App e dalla configurazione del backend.
+      </p>
+
+      <h2>5. Firestore (o altri servizi Firebase)</h2>
+      <p>
+        Ove l'App utilizzi <strong>Cloud Firestore</strong> (o servizi analoghi Firebase) per
+        sync o condivisione di routine:
+      </p>
+      <ul>
+        <li>
+          possono essere memorizzati documenti legati alle attività condivise o sincronizzate,
+          codici di import, metadati necessari al funzionamento della funzione;
+        </li>
+        <li>
+          la sicurezza dipende da <strong>regole di sicurezza</strong> configurate sul progetto
+          Firebase e dalle scelte di prodotto.
+        </li>
+      </ul>
+      <p>
+        L'utente deve considerare che i dati sincronizzati sono trattati anche dai fornitori
+        infrastrutturali secondo le loro policy (ad esempio
+        <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Google / Firebase</a>).
+      </p>
+
+      <h2>6. Dati relativi a salute e passi</h2>
+      <p>Funzioni che leggono <strong>passi</strong> o altri dati sensibili tramite API di sistema:</p>
+      <ul>
+        <li>
+          sono attivate <strong>solo previo consenso esplicito</strong> tramite i permessi
+          richiesti dalla piattaforma (ad esempio Health Connect / HealthKit / sensori, secondo
+          disponibilità);
+        </li>
+        <li>
+          Routinia utilizza tali dati per finalità <strong>tecniche e organizzative</strong>
+          legate alle routine configurate dall'utente (ad esempio aggiornamento obiettivi basati
+          sui passi), <strong>non</strong> per diagnosi o trattamento.
+        </li>
+      </ul>
+      <p>
+        L'utente può revocare i permessi dalle impostazioni del sistema operativo.
+      </p>
+
+      <h2>7. Notifiche (push / locali)</h2>
+      <p>
+        L'App può programmare <strong>notifiche locali</strong> per promemoria legati alle
+        routine. Il testo visualizzato dipende da titoli e impostazioni definiti dall'utente.
+        Non è garantito che tali messaggi siano adatti a contesti sensibili se la schermata di
+        blocco è visibile a terzi: l'utente è invitato a usare titoli discreti e la funzione
+        «riservato» ove disponibile.
+      </p>
+
+      <h2>8. Condivisione di routine</h2>
+      <p>
+        Le funzioni di <strong>condivisione</strong> (testo, codice, QR, immagini di riepilogo)
+        espongono solo ciò che l'utente conferma di inviare. Per contenuti contrassegnati come
+        sensibili, l'App può richiedere conferme aggiuntive. La ricezione da parte di terzi
+        avviene fuori dall'App (mail, social, messenger): l'utente è responsabile della scelta
+        dei destinatari.
+      </p>
+
+      <h2>9. Dati sensibili e routine riservate</h2>
+      <p>
+        L'utente può contrassegnare alcune routine come <strong>riservate</strong>. Ciò non
+        sostituisce misure di sicurezza del dispositivo (PIN, crittografia disco, backup del
+        produttore del telefono). Routinia non interpreta il contenuto delle routine per
+        finalità mediche.
+      </p>
+
+      <h2>10. Diritti dell'utente</h2>
+      <p>Secondo il <strong>GDPR</strong> (se applicabile) e normative locali, l'utente può avere diritto di:</p>
+      <ul>
+        <li>accesso, rettifica, cancellazione, limitazione, portabilità, opposizione;</li>
+        <li>revoca del consenso ove il trattamento si basi sul consenso;</li>
+        <li>reclamo all'autorità di controllo competente.</li>
+      </ul>
+      <p>
+        Per esercitare i diritti:
+        <a href="mailto:support@routinia.app">support@routinia.app</a> — risposta entro 30 giorni
+        dalla ricezione della richiesta, con identificazione del richiedente tramite verifica
+        dell'account associato all'app.
+      </p>
+      <p>
+        <strong>Eliminazione dati locali:</strong> tramite funzioni dell'App (ove presenti, ad
+        esempio cancellazione dati locali) e/o disinstallazione.
+        <strong>Dati su Firebase:</strong> gestione secondo funzioni di account/backend previste
+        dalla versione dell'App e dalla configurazione del progetto.
+      </p>
+
+      <h2>11. Conservazione</h2>
+      <ul>
+        <li><strong>Locale:</strong> fino a rimozione da parte dell'utente o cancellazione dell'App.</li>
+        <li>
+          <strong>Cloud:</strong> secondo policy Firebase e fino a cancellazione account o
+          operazioni di purge definite dal titolare.
+        </li>
+      </ul>
+
+      <h2>12. Modifiche</h2>
+      <p>
+        Il titolare può aggiornare questa informativa. La versione applicabile è quella
+        pubblicata con data di aggiornamento. Per modifiche sostanziali può essere previsto
+        avviso in App.
+      </p>
+
+      <hr>
+
+      <h2>13. Contatto sviluppatore</h2>
+      <p>
+        <strong>Email:</strong>
+        <a class="contact" href="mailto:support@routinia.app">support@routinia.app</a><br>
+        <strong>Sito web:</strong>
+        <a href="https://vincenzocuria.github.io/spesia-privacy/routinia-privacy.html">questa informativa</a><br>
+        <strong>Responsabile privacy:</strong>
+        <a href="mailto:support@routinia.app">support@routinia.app</a>
+      </p>
+
+      <footer>
+        Documento pubblicato per l'app Routinia. Per richieste sulla privacy scrivere a
+        <a href="mailto:support@routinia.app">support@routinia.app</a>.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
