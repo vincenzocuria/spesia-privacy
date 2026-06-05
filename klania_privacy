@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativa Privacy — Klania</title>
+  <style>
+    :root {
+      --primary: #5C6BC0;
+      --primary-light: #7986CB;
+      --text: #2C2C2C;
+      --text-muted: #5A5A5A;
+      --bg: #F5F3EF;
+      --surface: #ffffff;
+      --border: #D9D4CC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 28px 24px 36px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      color: var(--primary);
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.12rem;
+      color: var(--primary);
+    }
+
+    p, li, td { color: var(--text-muted); }
+    p { margin: 0 0 12px; }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .meta strong { color: var(--text); }
+
+    .lead {
+      font-size: 1.02rem;
+      color: var(--text);
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 12px 14px;
+      border-left: 4px solid var(--primary-light);
+      background: #eef0fa;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 0 0 12px;
+      padding-left: 22px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef0fa;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+
+    a {
+      color: var(--primary);
+      word-break: break-word;
+    }
+
+    .contact {
+      margin-top: 8px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e6e3;
+        --text-muted: #b8b4ad;
+        --bg: #1e1e1e;
+        --surface: #2a2a2a;
+        --border: #444;
+      }
+
+      .notice { background: #2d3148; }
+      th { background: #2d3148; color: var(--text); }
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 22px 16px 28px; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr {
+        margin-bottom: 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid var(--border);
+      }
+      td:last-child { border-bottom: none; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Informativa Privacy — Klania</h1>
+      <p class="meta">
+        <strong>Versione:</strong> 1.0<br>
+        <strong>Ultimo aggiornamento:</strong> 5 giugno 2026<br>
+        <strong>Titolare del trattamento / Sviluppatore:</strong> Vincenzo Curia —
+        <a href="mailto:curiavincenzo86@gmail.com">curiavincenzo86@gmail.com</a>
+        (indirizzo postale fornito su richiesta scritta all'email di contatto)
+      </p>
+
+      <p class="lead">
+        La presente informativa descrive come l'applicazione mobile <strong>Klania</strong>
+        («App») tratta i dati personali. Klania è un'app per organizzare la vita in casa
+        e in famiglia (lavagna condivisa, attività, eventi, spesa, profili membri e, ove
+        acquistato, funzioni Pet Care). L'App utilizza servizi cloud Google Firebase per
+        account, sincronizzazione e funzionalità collegate.
+      </p>
+
+      <div class="notice">
+        Klania non fornisce servizi medici, veterinari o di emergenza. Promemoria,
+        attività e note sugli animali domestici sono strumenti organizzativi definiti
+        dagli utenti e non sostituiscono il parere di un professionista.
+      </div>
+
+      <h2>1. Chi è il destinatario di questa informativa</h2>
+      <p>Utenti dell'App Klania su dispositivi Android e iOS compatibili, inclusi
+        amministratori di una «Casa» (household), membri invitati e profili gestiti
+        (ad esempio bambini senza account proprio).</p>
+
+      <h2>2. Dati trattati e finalità (in sintesi)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Descrizione sintetica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Area">Account e autenticazione</td>
+            <td data-label="Descrizione">Registro/accesso (email e password e/o Google Sign-In),
+              identificativo utente Firebase, token di sessione.</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Dati della Casa</td>
+            <td data-label="Descrizione">Nome Casa, membri, ruoli, avatar, compleanni,
+              preferenze profilo, impostazioni visibilità privacy scelte dall'utente,
+              attività, eventi, lista spesa, proposte, animali domestici, gamification
+              (punti, badge, premi).</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Foto</td>
+            <td data-label="Descrizione">Immagini profilo o animali caricate volontariamente
+              dall'utente (fotocamera o galleria), memorizzate su Firebase Storage.</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Inviti</td>
+            <td data-label="Descrizione">Codici invito, link di join, eventuale condivisione
+              tramite app di messaggistica del sistema.</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Notifiche</td>
+            <td data-label="Descrizione">Token dispositivo per notifiche push (Firebase Cloud
+              Messaging) e notifiche locali programmate dall'App.</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Acquisti in-app</td>
+            <td data-label="Descrizione">Pacchetti opzionali (Klania Premium, Pet Care) gestiti
+              da Google Play / App Store; Klania non memorizza dati di pagamento.</td>
+          </tr>
+          <tr>
+            <td data-label="Area">Diagnostica</td>
+            <td data-label="Descrizione">Crashlytics, Analytics aggregati, Remote Config,
+              App Check per sicurezza e miglioramento stabilità.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Base giuridica (GDPR)</h2>
+      <ul>
+        <li><strong>Esecuzione del contratto / fornitura del servizio:</strong> creazione Casa,
+          sincronizzazione dati, inviti, funzioni core dell'App.</li>
+        <li><strong>Consenso:</strong> permessi opzionali (fotocamera, galleria, notifiche),
+          condivisione volontaria di inviti o contenuti.</li>
+        <li><strong>Legittimo interesse:</strong> sicurezza, prevenzione abusi, miglioramento
+          tecnico (log e crash anonimi/aggregati).</li>
+        <li><strong>Obblighi di legge:</strong> ove applicabile (es. richieste autorità).</li>
+      </ul>
+
+      <h2>4. Firebase e infrastruttura cloud</h2>
+      <p>Klania utilizza, a seconda della build installata, servizi Google Firebase tra cui:</p>
+      <ul>
+        <li><strong>Firebase Authentication</strong> — accesso e identificazione utente;</li>
+        <li><strong>Cloud Firestore</strong> — archiviazione e sincronizzazione dati della Casa;</li>
+        <li><strong>Firebase Storage</strong> — foto caricate dagli utenti;</li>
+        <li><strong>Cloud Functions</strong> — logiche server-side (es. gamification, premi);</li>
+        <li><strong>Firebase Cloud Messaging</strong> — notifiche push;</li>
+        <li><strong>Firebase Analytics, Crashlytics, Remote Config, App Check</strong>.</li>
+      </ul>
+      <p>I dati possono essere trattati su server Google ubicati anche fuori dallo SEE.
+        Google agisce come responsabile del trattamento / sub-fornitore secondo i propri
+        termini. Informazioni:
+        <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">firebase.google.com/support/privacy</a>.</p>
+
+      <h2>5. Servizi di terze parti aggiuntivi</h2>
+      <ul>
+        <li><strong>Google Play / App Store:</strong> gestione acquisti in-app e abbonamenti
+          secondo le rispettive privacy policy.</li>
+        <li><strong>Google Sign-In:</strong> se scelto dall'utente per l'accesso.</li>
+        <li><strong>DiceBear API</strong> (<a href="https://www.dicebear.com" rel="noopener noreferrer">dicebear.com</a>):
+          generazione avatar illustrati; il dispositivo può richiedere immagini tramite URL
+          contenenti un seed tecnico (non necessariamente il nome reale dell'utente).</li>
+        <li><strong>Condivisione sistema (Share):</strong> l'utente sceglie app e destinatari
+          per codici invito o link; Klania non controlla i canali esterni.</li>
+      </ul>
+
+      <h2>6. Dati dei minori e profili gestiti</h2>
+      <p>Un adulto amministratore può creare profili per bambini o minori senza account
+        email dedicato. Tali dati (nome, avatar, compleanno, ecc.) sono visibili ai membri
+        della stessa Casa secondo le impostazioni di privacy e i ruoli. L'amministratore
+        è responsabile di avere titolo a inserire dati di minori e di informare gli altri
+        tutori ove necessario.</p>
+
+      <h2>7. Conservazione</h2>
+      <ul>
+        <li>Dati cloud: fino a cancellazione account, Casa o contenuti da parte dell'utente,
+          salvo obblighi di legge o backup tecnici temporanei.</li>
+        <li>Dati locali sul dispositivo (cache, preferenze): fino a disinstallazione o
+          cancellazione dati app dalle impostazioni di sistema.</li>
+        <li>Log di crash/analytics: secondo policy Firebase e impostazioni del progetto.</li>
+      </ul>
+
+      <h2>8. Sicurezza</h2>
+      <p>Le comunicazioni con i servizi cloud avvengono tramite connessioni cifrate (HTTPS/TLS).
+        L'accesso ai dati della Casa è regolato da regole di sicurezza Firebase e da ruoli
+        applicativi. Nessun sistema è completamente invulnerabile: l'utente è invitato a
+        proteggere il dispositivo (PIN, biometria) e a non condividere codici invito con
+        persone non autorizzate.</p>
+
+      <h2>9. Diritti dell'interessato</h2>
+      <p>Nei limiti del GDPR e delle norme applicabili, l'utente può esercitare i diritti di
+        accesso, rettifica, cancellazione, limitazione, portabilità, opposizione e revoca
+        del consenso (ove basato su consenso), nonché proporre reclamo al Garante Privacy
+        (<a href="https://www.garanteprivacy.it" rel="noopener noreferrer">garanteprivacy.it</a>).</p>
+      <p>Per le richieste scrivere a
+        <a class="contact" href="mailto:curiavincenzo86@gmail.com">curiavincenzo86@gmail.com</a>
+        indicando l'email dell'account Klania e, se possibile, l'identificativo della Casa.
+        Risposta entro 30 giorni dalla ricezione, salvo proroghe consentite dalla legge.</p>
+
+      <h2>10. Eliminazione dei dati</h2>
+      <ul>
+        <li>Disinstallazione dell'App rimuove i dati locali non sincronizzati.</li>
+        <li>Per dati cloud associati all'account, contattare il titolare all'email sopra
+          o utilizzare le funzioni di gestione account/Casa previste dall'App, ove disponibili.</li>
+        <li>Gli acquisti in-app restano gestiti da Google Play / App Store per fatturazione
+          e storico transazioni.</li>
+      </ul>
+
+      <h2>11. Trasferimenti extra-SEE</h2>
+      <p>L'uso di Firebase può comportare trasferimento di dati verso Paesi terzi. Google
+        adotta garanzie contrattuali (Clausole Contrattuali Standard) e misure tecniche
+        descritte nella propria documentazione privacy.</p>
+
+      <h2>12. Modifiche</h2>
+      <p>Il titolare può aggiornare questa informativa. La versione applicabile è quella
+        pubblicata su questa pagina con la data indicata. Per modifiche rilevanti può essere
+        previsto un avviso in App o sullo store.</p>
+
+      <hr>
+
+      <h2>13. Contatto</h2>
+      <p>
+        <strong>Titolare:</strong> Vincenzo Curia<br>
+        <strong>Email:</strong> <a class="contact" href="mailto:curiavincenzo86@gmail.com">curiavincenzo86@gmail.com</a><br>
+        <strong>App:</strong> Klania (package Android: <code>com.klania.klania</code>)
+      </p>
+
+      <footer>
+        Documento pubblicato per l'app Klania. Per richieste sulla privacy scrivere a
+        <a href="mailto:curiavincenzo86@gmail.com">curiavincenzo86@gmail.com</a>.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
